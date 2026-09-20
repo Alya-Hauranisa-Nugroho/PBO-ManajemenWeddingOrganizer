@@ -227,6 +227,8 @@ Pada gambar di atas, saya menampilkan menu utama dari program yang telah diranca
 
 Ketika pengguna memilih “1” pada menu utama, pengguna akan masuk ke dalam Menu Tambah, di mana menu ini memungkinkan pengguna untuk memasukkan data baru pada data pelanggan, paket wedding, maupun pemesanan wedding. Pengguna dapat memilih salah satu jenis data yang ingin ditambahkan sesuai dengan kebutuhan. Pada tampilan tersebut, saya memilih menu “1", "yaitu Tambah Pelanggan”, sehingga program akan melanjutkan ke proses untuk memasukkan data pelanggan.
 
+---
+
 * **Tambah Pelanggan**
 
 <img width="568" height="411" alt="image" src="https://github.com/user-attachments/assets/9dbccc13-34a0-4a31-ad23-4c82098f334b" />
@@ -265,6 +267,8 @@ Apabila telah menyelesaikan proses tambah, pengguna dapat memilih menu "4" untuk
 
 Ketika pengguna memilih “2” pada menu utama, pengguna akan masuk ke dalam Menu Tampilkan, di mana menu ini memungkinkan pengguna untuk melihat data yang sudah ada pada data pelanggan, paket wedding, maupun pemesanan wedding. 
 
+---
+
 Berikut merupakan tampilan untuk Menu Tampilkan di setiap data:
 
 * **Tampilkan Pelanggan**
@@ -294,6 +298,8 @@ Ketika pengguna memilih “3” pada menu utama, pengguna akan masuk ke dalam Me
 <img width="471" height="241" alt="image" src="https://github.com/user-attachments/assets/60b7d882-687e-429e-bb3d-1a03c0d6ba15" />
 
 Pada Menu Update, pengguna dapat memilih salah satu dari tiga jenis data yang tersedia untuk diperbarui. Setelah memilih jenis data, pengguna akan diminta memasukkan ID dari data yang ingin diubah. Program kemudian akan mencari data berdasarkan ID tersebut. Apabila data ditemukan, pengguna dapat memasukkan informasi baru sesuai dengan atribut yang dapat diperbarui.
+
+---
 
 Berikut merupakan proses update pada setiap data:
 
@@ -333,6 +339,8 @@ Ketika pengguna memilih “4” pada menu utama, pengguna akan masuk ke dalam Me
 
 Pada Menu Hapus, pengguna dapat memilih salah satu jenis data yang tersedia. Setelah memilih jenis data, pengguna akan diminta memasukkan ID dari data yang ingin dihapus. Program kemudian akan mencari data berdasarkan ID tersebut. Apabila data ditemukan, data akan dihapus dari daftar penyimpanan.
 
+---
+
 Berikut merupakan proses penghapusan pada setiap data:
 
 * **Hapus Pelanggan**
@@ -367,30 +375,3 @@ Apabila telah menyelesaikan proses hapus, pengguna dapat memilih menu **“4”*
 
 
 Apabila pengguna telah selesai melakukan pengelolaan data, pengguna dapat memilih menu “5” pada menu utama untuk mengakhiri program. Setelah pengguna memilih menu tersebut, program akan menampilkan pesan “BYEEEE!!” sebagai tanda bahwa program telah selesai dijalankan.
-
----
-
-## Penerapan Nilai Tambah pada Program
-
-Program ini memiliki penerapan nilai tambah, yaitu sebagai berikut:
-
-### **1. Access Modifier**
-Pada program ini, saya menerapkan access modifier private pada atribut yang terdapat di dalam class data, seperti Pelanggan, PaketWedding, dan PemesananWedding. Penggunaan private membuat atribut tersebut hanya dapat diakses secara langsung dari dalam class tempat atribut tersebut didefinisikan.
-
-Contohnya terdapat pada baris kode di class Pelanggan, yaitu:
-
-<img width="361" height="118" alt="image" src="https://github.com/user-attachments/assets/752974b1-c388-4f47-bed3-eb56448a9b13" />
-
-Penggunaan access modifier pada gambar di atas menunjukkan bahwa data pada setiap object tidak dapat diakses atau diubah secara langsung dari luar class.
-
-### **2. Access Modifier**
-Pada program ini, saya menerapkan konsep encapsulation dengan menyembunyikan atribut menggunakan access modifier private dan menyediakan getter serta setter untuk mengakses atau mengubah data tertentu.
-
-Sebagai contoh, pada class Pelanggan terdapat penerapan method getter dan setter:
-
-<img width="453" height="517" alt="image" src="https://github.com/user-attachments/assets/273dd8bf-606c-4172-ba3c-2a3f09745a7a" />
-
-
-Getter digunakan untuk mengambil nilai dari atribut, sedangkan setter digunakan untuk mengubah nilai atribut. Sehingga akses terhadap data dalam object dilakukan melalui method yang telah disediakan oleh class, sehingga data tidak diakses secara langsung dari luar class.
-
-Terlihat juga pada gambar di atas bahwa tidak semua atribut memiliki setter. Contohnya, idPelanggan hanya memiliki getter sehingga ID tidak dapat diubah setelah object dibuat. Hal ini bertujuan untuk membantu menjaga data tertentu agar tetap sesuai dengan nilai awalnya.
