@@ -1,70 +1,206 @@
 # 💍 Sistem Manajemen Wedding Organizer
 
-## Houry do Wedds
+## Houry Do Wedds
 
 #### Alya Hauranisa Nugroho | 2509116005 | Sistem Informasi A 2025
+
 #### Mata Kuliah: Pemrograman Berorientasi Objek
 
 ---
 
-## 📌 Deskripsi Program
+## 📌 Deskripsi Studi Kasus
 
-Sistem Manajemen Wedding Organizer merupakan program berbasis bahasa pemrograman Java yang digunakan untuk mengelola data pada usaha Wedding Organizer "Houry Do Wedds" secara sederhana.
+Sistem Manajemen Wedding Organizer merupakan program berbasis bahasa pemrograman Java yang digunakan untuk mengelola data pada usaha Wedding Organizer **"Houry Do Wedds"** secara sederhana.
 
-Program ini dibuat dengan menerapkan konsep Object Oriented Programming atau OOP, serta fitur fitur sederhana yang mendukung CRUD (_Create, Read, Update, Delete_). Program ini memungkinkan pengguna untuk mengelola data pelanggan, paket wedding, serta pemesanan wedding yang mencatat informasi seperti pelanggan yang melakukan pemesanan, paket wedding yang dipilih, venue, pax, serta tanggal pelaksanaan acara.
+Program ini merupakan pengembangan dari project sebelumnya dengan menambahkan penerapan konsep **Inheritance** dalam pengelolaan data vendor. Program memiliki beberapa fitur CRUD (*Create, Read, Update, Delete*) untuk mengelola data pelanggan, paket wedding, pemesanan wedding, serta vendor.
 
 ---
 
 ## 📂 Struktur Class
 
-Program Sistem Manajemen Wedding Organizer terdiri dari beberapa class dengan fungsi yang berbeda, diantaranya yaitu:
+Program Sistem Manajemen Wedding Organizer terdiri dari beberapa class dengan fungsi yang berbeda, yaitu:
 
 ### 1. `WeddingOrganizer.java`
-Class ini merupakan class utama yang menjadi _entry point_ program. Class ini digunakan untuk menjalankan program, menampilkan menu utama, serta memanggil fungsi yang terdapat pada WeddingCRUD.java.
-Menu utama pada program ini terdiri dari:
-1. Menu Tambah
-2. Menu Tampilkan
-3. Menu Update
-4. Menu Hapus
+
+Class ini merupakan class utama yang menjadi *entry point* program. Class ini digunakan untuk menjalankan program dan menampilkan menu utama.
+
+Menu utama pada program terdiri dari:
+
+1. Tambah
+2. Tampilkan
+3. Update
+4. Hapus
 5. Keluar >>>
 
+---
+
 ### 2. `WeddingCRUD.java`
-Class ini merupakan class service yang menangani proses utama CRUD pada program. Class ini menyediakan fungsi untuk menambahkan, menampilkan, mengubah, dan menghapus data.
+
+Class ini merupakan class yang menangani proses utama CRUD pada program.
 
 Data yang dikelola pada class ini meliputi:
+
 * Pelanggan
 * Paket Wedding
 * Pemesanan Wedding
+* Vendor
+
+Pada class ini, `WeddingCRUD` memiliki ArrayList untuk `VendorCatering` dan `VendorDekorasi`. Sehingga, pengguna dapat memilih jenis vendor terlebih dahulu sebelum melakukan proses tambah, tampilkan, update, maupun hapus.
+
+---
 
 ### 3. `Pelanggan.java`
-Class ini merupakan class data yang merepresentasikan pelanggan yang melakukan pemesanan pada wedding organizer Class ini memiliki informasi pelanggan yang berupa ID pelanggan, nama pelanggan, dan no HP.
 
-Atribut yang diterapkan pada class ini meliputi:
+Class ini merupakan class data yang merepresentasikan pelanggan yang melakukan pemesanan pada Wedding Organizer.
 
-* idPelanggan
-* nama
-* noHp
+Atribut yang digunakan meliputi:
+
+* `idPelanggan`
+* `nama`
+* `noHp`
+
+---
 
 ### 4. `PaketWedding.java`
-Class ini merupakan class data yang merepresentasikan paket wedding yang tersedia. Setiap paket memiliki informasi berupa ID paket, nama paket, dan harga yang dapat digunakan dalam proses pemesanan.
 
-Atribut yang diterapkan pada class ini meliputi:
+Class ini merupakan class data yang merepresentasikan paket wedding yang tersedia.
 
-* idPaket
-* namaPaket
-* harga
+Atribut yang digunakan meliputi:
+
+* `idPaket`
+* `namaPaket`
+* `harga`
+
+---
 
 ### 5. `PemesananWedding.java`
-Class ini merupakan class data yang merepresentasikan data pemesanan wedding. Class ini menyimpan informasi mengenai pelanggan, paket yang dipilih, serta detail dari acara wedding yang telah dibooking.
 
-Atribut yang diterapkan pada class ini meliputi:
+Class ini merupakan class data yang merepresentasikan data pemesanan wedding.
 
-* idBooking
-* pelanggan
-* paketWedding
-* venue
-* tanggalAcara
-* pax
+Atribut yang digunakan meliputi:
+
+* `idBooking`
+* `pelanggan`
+* `paketWedding`
+* `venue`
+* `tanggalAcara`
+* `pax`
+
+---
+
+### 6. `Vendor.java`
+
+Class `Vendor` merupakan **superclass** yang digunakan sebagai class induk untuk jenis-jenis vendor pada sistem.
+
+Class ini menyimpan atribut umum yang dimiliki oleh setiap vendor, yaitu:
+
+* `idVendor`
+* `namaVendor`
+* `noTelepon`
+
+Atribut dan method umum tersebut kemudian dapat digunakan oleh subclass yang mewarisi class `Vendor`.
+
+---
+
+### 7. `VendorCatering.java`
+
+Class `VendorCatering` merupakan **subclass** dari class `Vendor`.
+
+Class ini mewarisi informasi umum vendor dari superclass `Vendor` dan memiliki atribut tambahan yang khusus digunakan untuk vendor catering, yaitu:
+
+* `jenisMasakan`
+* `sistemPenyajian`
+* `hargaPerPax`
+
+Dengan demikian, `VendorCatering` memiliki informasi umum vendor sekaligus informasi khusus mengenai layanan catering.
+
+---
+
+### 8. `VendorDekorasi.java`
+
+Class `VendorDekorasi` merupakan **subclass** dari class `Vendor`.
+
+Class ini mewarisi informasi umum vendor dari superclass `Vendor` dan memiliki atribut tambahan yang digunakan untuk vendor dekorasi, yaitu:
+
+* `temaDekorasi`
+* `jenisDekorasi`
+* `hargaPaketDekorasi`
+
+Dengan demikian, `VendorDekorasi` memiliki informasi umum vendor sekaligus informasi khusus mengenai layanan dekorasi.
+
+---
+
+### 9. `InputValidator.java`
+
+Class `InputValidator` digunakan untuk membantu melakukan validasi input yang dimasukkan oleh pengguna.
+
+Class ini digunakan pada beberapa bagian program, seperti input harga paket, harga vendor, dan jumlah pax.
+
+---
+
+## 🌳 Hierarki Class
+
+Penerapan inheritance pada program dapat digambarkan secara sederhana sebagai berikut:
+
+```text
+                    Vendor
+                      │
+             ┌────────┴────────┐
+             │                 │
+      VendorCatering     VendorDekorasi
+```
+
+Class `Vendor` berperan sebagai **superclass**, sedangkan `VendorCatering` dan `VendorDekorasi` berperan sebagai **subclass**.
+
+Selain hubungan inheritance tersebut, class lain pada program digunakan untuk mendukung proses pengelolaan data:
+
+```text
+WeddingOrganizer
+       │
+       ▼
+  WeddingCRUD
+       │
+       ├── Pelanggan
+       ├── PaketWedding
+       ├── PemesananWedding
+       │
+       ├── Vendor
+       │     ├── VendorCatering
+       │     └── VendorDekorasi
+       │
+       └── InputValidator
+```
+
+---
+
+## 💭 Penerapan Inheritance
+
+Konsep **inheritance** diterapkan dengan menjadikan `Vendor` sebagai superclass dari `VendorCatering` dan `VendorDekorasi`.
+
+Atribut yang bersifat umum seperti ID vendor, nama vendor, dan nomor telepon ditempatkan pada superclass `Vendor`. Kemudian kedua subclass mewarisi atribut dan method tersebut serta menambahkan atribut yang sesuai dengan kebutuhan masing-masing jenis vendor.
+
+Secara konsep:
+
+```text
+Vendor
+├── idVendor
+├── namaVendor
+└── noTelepon
+        │
+        ├── VendorCatering
+        │   ├── jenisMasakan
+        │   ├── sistemPenyajian
+        │   └── hargaPerPax
+        │
+        └── VendorDekorasi
+            ├── temaDekorasi
+            ├── jenisDekorasi
+            └── hargaPaketDekorasi
+```
+
+Penerapan ini membuat informasi yang sama pada setiap vendor tidak perlu dibuat kembali pada masing-masing subclass.
+
+Pada `WeddingCRUD`, kedua subclass kemudian digunakan untuk menyimpan data vendor sesuai dengan jenisnya. Program menyediakan pilihan vendor catering atau vendor dekorasi ketika pengguna ingin mengelola data vendor.
 
 ---
 
