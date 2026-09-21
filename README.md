@@ -223,7 +223,7 @@ Pada gambar di atas, saya menampilkan menu utama dari program yang telah diranca
 
 ### **1. Menu Tambah**
 
-<img width="465" height="219" alt="image" src="https://github.com/user-attachments/assets/994e7fa4-0f1d-4aa8-ba09-fb885bb358a2" />
+<img width="480" height="276" alt="image" src="https://github.com/user-attachments/assets/e853f97f-933b-4c7f-8ce2-3ea249087249" />
 
 Ketika pengguna memilih “1” pada menu utama, pengguna akan masuk ke dalam Menu Tambah, di mana menu ini memungkinkan pengguna untuk memasukkan data baru pada data pelanggan, paket wedding, maupun pemesanan wedding. Pengguna dapat memilih salah satu jenis data yang ingin ditambahkan sesuai dengan kebutuhan. Pada tampilan tersebut, saya memilih menu “1", "yaitu Tambah Pelanggan”, sehingga program akan melanjutkan ke proses untuk memasukkan data pelanggan.
 
@@ -231,7 +231,8 @@ Ketika pengguna memilih “1” pada menu utama, pengguna akan masuk ke dalam Me
 
 * **Tambah Pelanggan**
 
-<img width="568" height="411" alt="image" src="https://github.com/user-attachments/assets/9dbccc13-34a0-4a31-ad23-4c82098f334b" />
+<img width="564" height="432" alt="image" src="https://github.com/user-attachments/assets/9373d943-2d1f-46c4-ac4e-0d91518e7241" />
+
 
 Selanjutnya, program akan menampilkan tempat untuk memasukkan data pelanggan. Pengguna diminta memasukkan ID Pelanggan, Nama Pelanggan, dan No HP. Setelah seluruh data berhasil dimasukkan, program menampilkan pesan bahwa data pelanggan berhasil ditambahkan, kemudian kembali menampilkan Menu Tambah agar pengguna dapat melanjutkan proses penambahan data lainnya.
 
@@ -247,23 +248,44 @@ Berikut merupakan proses penambahan data lainnya:
 
 <img width="706" height="876" alt="image" src="https://github.com/user-attachments/assets/65cdc62c-9d67-49fe-b4c7-614ca256c260" />
 
+* **Tambah Vendor**
+
+<img width="499" height="225" alt="image" src="https://github.com/user-attachments/assets/57d63793-853a-4266-85d7-6c20d8071518" />
+
+
+Pada menu Tambah Vendor, pengguna terlebih dahulu memilih jenis vendor yang ingin ditambahkan.
+
+<img width="577" height="223" alt="image" src="https://github.com/user-attachments/assets/7798d385-ad96-4c9e-a16e-5cbaa495dfa5" />
+
+Jika memilih vendor catering, pengguna memasukkan data umum vendor serta data khusus catering seperti jenis masakan, sistem penyajian, dan harga per pax.
+
+<img width="584" height="226" alt="image" src="https://github.com/user-attachments/assets/5740952d-53fc-4553-a5f4-80f2eea02f78" />
+
+
+Jika memilih vendor dekorasi, pengguna memasukkan data umum vendor serta data khusus dekorasi seperti tema dekorasi, jenis dekorasi, dan harga paket dekorasi.
+
+---
+
 Berdasarkan gambar di atas, diketahui bahwa pengguna dapat menambahkan:
 
 * **Pelanggan**, dengan memasukkan ID, nama, dan nomor HP.
 * **Paket Wedding**, dengan memasukkan ID, nama paket, dan harga.
 * **Pemesanan Wedding**, dengan memilih pelanggan dan paket wedding yang sudah tersedia, kemudian memasukkan venue, tanggal acara, dan jumlah pax.
+* **Vendor**, dengan memilih jenis vendornya terlebih dahulu, yaitu vendor catering atau vendor dekorasi, kemudian mengisi data vedor yang dibutuhkan sesuai jenisnya.
 
 
 * **Kembali ke Menu Utama**
-<img width="468" height="569" alt="image" src="https://github.com/user-attachments/assets/5c345a71-7f5b-4056-afcf-876e7fb374ca" />
 
-Apabila telah menyelesaikan proses tambah, pengguna dapat memilih menu "4" untuk keluar dari menu tambah dan kembali ke menu utama.
+<img width="489" height="599" alt="image" src="https://github.com/user-attachments/assets/f27b7b1f-a20a-4f94-8b22-d1bfe9b17b4f" />
+
+
+Apabila telah menyelesaikan proses tambah, pengguna dapat memilih menu "5" untuk keluar dari menu tambah dan kembali ke menu utama.
 
 ---
 
 ### **2. Menu Tampilkan**
 
-<img width="484" height="245" alt="image" src="https://github.com/user-attachments/assets/f43ce51e-aff5-43e8-b753-e22dc519e881" />
+<img width="494" height="277" alt="image" src="https://github.com/user-attachments/assets/8465ea91-3a02-4785-b3bc-7a4d0b4752a2" />
 
 Ketika pengguna memilih “2” pada menu utama, pengguna akan masuk ke dalam Menu Tampilkan, di mana menu ini memungkinkan pengguna untuk melihat data yang sudah ada pada data pelanggan, paket wedding, maupun pemesanan wedding. 
 
@@ -283,11 +305,18 @@ Berikut merupakan tampilan untuk Menu Tampilkan di setiap data:
 
 <img width="469" height="293" alt="image" src="https://github.com/user-attachments/assets/84801c1a-3880-4d73-8a4c-4f80163d660b" />
 
+* **Tampilkan Vendor**
+
+<img width="484" height="673" alt="image" src="https://github.com/user-attachments/assets/0d1cd904-85e5-44c5-94ca-e15704dd7eaf" />
+
+<img width="496" height="675" alt="image" src="https://github.com/user-attachments/assets/f424a544-0dff-488d-b3a5-ed13d9fe5283" />
+
+
 * **Kembali ke Menu Utama**
 
-<img width="477" height="571" alt="image" src="https://github.com/user-attachments/assets/70c93b55-9aab-44fe-8019-d81b30a2295a" />
+<img width="496" height="601" alt="image" src="https://github.com/user-attachments/assets/23cc5658-367b-465a-8c3b-f3eecff24ff5" />
 
-Pengguna dapat memilih menu "4" untuk keluar dari menu tampilkan dan kembali ke menu utama.
+Pengguna dapat memilih menu "5" untuk keluar dari menu tampilkan dan kembali ke menu utama.
 
 ---
 
@@ -295,7 +324,7 @@ Pengguna dapat memilih menu "4" untuk keluar dari menu tampilkan dan kembali ke 
 
 Ketika pengguna memilih “3” pada menu utama, pengguna akan masuk ke dalam Menu Update. Menu ini digunakan untuk mengubah data yang sudah tersimpan pada program. Pengguna dapat memilih data yang ingin diperbarui, yaitu data pelanggan, paket wedding, maupun pemesanan wedding.
 
-<img width="471" height="241" alt="image" src="https://github.com/user-attachments/assets/60b7d882-687e-429e-bb3d-1a03c0d6ba15" />
+<img width="474" height="272" alt="image" src="https://github.com/user-attachments/assets/e5ee7df4-c3f9-4954-bc1b-7c54b1cf398f" />
 
 Pada Menu Update, pengguna dapat memilih salah satu dari tiga jenis data yang tersedia untuk diperbarui. Setelah memilih jenis data, pengguna akan diminta memasukkan ID dari data yang ingin diubah. Program kemudian akan mencari data berdasarkan ID tersebut. Apabila data ditemukan, pengguna dapat memasukkan informasi baru sesuai dengan atribut yang dapat diperbarui.
 
@@ -323,11 +352,19 @@ Pada proses Update Paket Wedding, pengguna diminta memasukkan ID paket yang ingi
 
 Pada proses Update Pemesanan Wedding, pengguna diminta memasukkan ID booking yang ingin diperbarui. Setelah data ditemukan, pengguna dapat mengubah venue, tanggal acara, dan jumlah pax sesuai dengan kebutuhan. Setelah data berhasil diperbarui, program akan menampilkan pesan bahwa data pemesanan berhasil diupdate.
 
+* **Update Vendor**
+
+<img width="629" height="283" alt="image" src="https://github.com/user-attachments/assets/c1047330-b90b-40ab-b684-e5d6ca2ffecb" />
+
+<img width="627" height="278" alt="image" src="https://github.com/user-attachments/assets/afdb6063-5a9e-44c3-bbc7-e7f87b14cc67" />
+
+Pada proses Update Vendor, pengguna diminta untuk memilih jenis vendor yang ingin diperbarui. Apabila pengguna memilih "1", maka pengguna akan diminta untuk memasukkan ID vendor catering untuk mengubah harga per pax dari vendor tersebut. Apabila pengguna memilih "2" maka pengguna akan diminta untuk memasukkan ID dari vendor dekorasi untuk mengubah harga paket dekorasi dari vendor tersebut.
+
 * **Kembali ke Menu Utama**
 
-<img width="473" height="564" alt="image" src="https://github.com/user-attachments/assets/7b1b44b7-b165-470f-8d9f-5d6d208839cb" />
+<img width="480" height="601" alt="image" src="https://github.com/user-attachments/assets/84058989-ffa6-41b6-8bbc-634d4b5874d8" />
 
-Apabila telah menyelesaikan proses update, pengguna dapat memilih menu “4” untuk keluar dari Menu Update dan kembali ke menu utama.
+Apabila telah menyelesaikan proses update, pengguna dapat memilih menu “5” untuk keluar dari Menu Update dan kembali ke menu utama.
 
 ---
 
@@ -335,7 +372,7 @@ Apabila telah menyelesaikan proses update, pengguna dapat memilih menu “4” u
 
 Ketika pengguna memilih “4” pada menu utama, pengguna akan masuk ke dalam Menu Hapus. Menu ini digunakan untuk menghapus data yang sudah tersimpan pada sistem. Pengguna dapat memilih data yang ingin dihapus, yaitu data pelanggan, paket wedding, maupun pemesanan wedding.
 
-<img width="473" height="244" alt="image" src="https://github.com/user-attachments/assets/b9937aff-0999-4fe3-afb4-7cbf83aa91fa" />
+<img width="479" height="278" alt="image" src="https://github.com/user-attachments/assets/3b7a9ff2-d03d-4d41-aeb3-0e3cf2794b50" />
 
 Pada Menu Hapus, pengguna dapat memilih salah satu jenis data yang tersedia. Setelah memilih jenis data, pengguna akan diminta memasukkan ID dari data yang ingin dihapus. Program kemudian akan mencari data berdasarkan ID tersebut. Apabila data ditemukan, data akan dihapus dari daftar penyimpanan.
 
@@ -360,14 +397,22 @@ Pada proses Hapus Paket Wedding, pengguna diminta memasukkan ID paket yang ingin
 
 <img width="492" height="163" alt="image" src="https://github.com/user-attachments/assets/bed7fbb2-88cc-4f17-a6ce-390c9803bc08" />
 
+Pada proses Hapus Pemesanan Wedding, pengguna diminta memasukkan ID booking yang ingin dihapus. Program akan mencari ID booking tersebut pada daftar pemesanan. Apabila ditemukan, data pemesanan akan dihapus dan program akan menampilkan pesan bahwa data pemesanan berhasil dihapus.
 
-Pada proses **Hapus Pemesanan Wedding**, pengguna diminta memasukkan ID booking yang ingin dihapus. Program akan mencari ID booking tersebut pada daftar pemesanan. Apabila ditemukan, data pemesanan akan dihapus dan program akan menampilkan pesan bahwa data pemesanan berhasil dihapus.
+* **Hapus Vendor**
+
+<img width="504" height="248" alt="image" src="https://github.com/user-attachments/assets/4cee8013-e17a-44a0-bab4-4d1260d4dc13" />
+
+Pada proses Hapus Vendor, pengguna diminta untuk memilih jenis vendor yang ingin dihapus. Apabila pengguna memilih "1", maka pengguna akan diminta untuk memasukkan ID vendor catering yang ingin dihapus. Apabila pengguna memilih "2" maka pengguna akan diminta untuk memasukkan ID dari vendor dekorasi yang ingin dihapus. Apabila ditemukan, data vendor akan dihapus dan program akan menampilkan pesan bahwa data pemesanan berhasil dihapus.
+
 
 * **Kembali ke Menu Utama**
 
-<img width="471" height="565" alt="image" src="https://github.com/user-attachments/assets/3de0976c-0a7e-44d9-8691-5c283d5f81bb" />
+<img width="522" height="599" alt="image" src="https://github.com/user-attachments/assets/b039d9a6-bf83-4a40-8707-48032fc2040a" />
 
 Apabila telah menyelesaikan proses hapus, pengguna dapat memilih menu **“4”** untuk keluar dari Menu Hapus dan kembali ke menu utama.
+
+---
 
 5. **Keluar >>>**
 
