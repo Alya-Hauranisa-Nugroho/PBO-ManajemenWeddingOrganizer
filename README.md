@@ -155,27 +155,29 @@ Class `Vendor` berperan sebagai **superclass**, sedangkan `VendorCatering` dan `
 Selain hubungan inheritance tersebut, class lain pada program digunakan untuk mendukung proses pengelolaan data:
 
 ```text
-WeddingOrganizer
-       │
-       ▼
-  WeddingCRUD
-       │
-       ├── Pelanggan
-       ├── PaketWedding
-       ├── PemesananWedding
-       │
-       ├── Vendor
-       │     ├── VendorCatering
-       │     └── VendorDekorasi
-       │
-       └── InputValidator
+ManajemenWeddingOrganizer
+│
+├── com.mycompany.weddingorganizer
+│   └── WeddingOrganizer.java
+│
+├── model
+│   ├── PaketWedding.java
+│   ├── Pelanggan.java
+│   ├── PemesananWedding.java
+│   ├── Vendor.java
+│   ├── VendorCatering.java
+│   └── VendorDekorasi.java
+│
+└── service
+    ├── InputValidator.java
+    └── WeddingCRUD.java
 ```
 
 ---
 
 ## 💭 Penerapan Inheritance
 
-Konsep **inheritance** diterapkan dengan menjadikan `Vendor` sebagai superclass dari `VendorCatering` dan `VendorDekorasi`.
+Konsep inheritance diterapkan dengan menjadikan `Vendor` sebagai superclass dari `VendorCatering` dan `VendorDekorasi`.
 
 Atribut yang bersifat umum seperti ID vendor, nama vendor, dan nomor telepon ditempatkan pada superclass `Vendor`. Kemudian kedua subclass mewarisi atribut dan method tersebut serta menambahkan atribut yang sesuai dengan kebutuhan masing-masing jenis vendor.
 
@@ -201,6 +203,13 @@ Vendor
 Penerapan ini membuat informasi yang sama pada setiap vendor tidak perlu dibuat kembali pada masing-masing subclass.
 
 Pada `WeddingCRUD`, kedua subclass kemudian digunakan untuk menyimpan data vendor sesuai dengan jenisnya. Program menyediakan pilihan vendor catering atau vendor dekorasi ketika pengguna ingin mengelola data vendor.
+
+Implementasi inheriance pada kode saya adalah sebagai berikut:
+
+<img width="1231" height="338" alt="image" src="https://github.com/user-attachments/assets/78efd2d3-e143-46fd-a96e-6b600977e5c9" />
+
+<img width="1241" height="341" alt="image" src="https://github.com/user-attachments/assets/671d9545-d431-4a7e-8fc5-c69937696114" />
+
 
 ---
 
