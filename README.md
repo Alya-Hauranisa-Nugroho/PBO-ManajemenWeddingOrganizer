@@ -8,7 +8,7 @@
 
 ---
 
-## 📌 Deskripsi Studi Kasus
+## 📌 Deskripsi Program
 
 Sistem Manajemen Wedding Organizer merupakan program berbasis bahasa pemrograman Java yang digunakan untuk mengelola data pada usaha Wedding Organizer **"Houry Do Wedds"** secara sederhana.
 
