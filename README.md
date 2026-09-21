@@ -204,11 +204,13 @@ Penerapan ini membuat informasi yang sama pada setiap vendor tidak perlu dibuat 
 
 Pada `WeddingCRUD`, kedua subclass kemudian digunakan untuk menyimpan data vendor sesuai dengan jenisnya. Program menyediakan pilihan vendor catering atau vendor dekorasi ketika pengguna ingin mengelola data vendor.
 
-Implementasi inheriance pada kode saya adalah sebagai berikut:
+Implementasi inheritance pada kode saya adalah sebagai berikut:
 
 <img width="1231" height="338" alt="image" src="https://github.com/user-attachments/assets/78efd2d3-e143-46fd-a96e-6b600977e5c9" />
 
 <img width="1241" height="341" alt="image" src="https://github.com/user-attachments/assets/671d9545-d431-4a7e-8fc5-c69937696114" />
+
+Inheritance diterapkan pada `VendorCatering` dan `VendorDekorasi` yang merupakan subclass dari `Vendor` menggunakan keyword `extends`. Class `Vendor` sebagai superclass menyimpan atribut umum seperti `idVendor`, `namaVendor`, dan `noTelepon`, sedangkan kedua subclass menambahkan atribut khusus sesuai jenis vendornya. Pada constructor digunakan `super()` untuk menginisialisasi atribut yang diwarisi dari `Vendor`. Dengan inheritance, kode menjadi lebih sederhana karena atribut dan method yang sama tidak perlu ditulis ulang pada setiap subclass.
 
 
 ---
